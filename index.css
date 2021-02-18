@@ -77,7 +77,6 @@ main {
 .question {
     grid-column-start: 1;
     grid-column-end: 2;
-    transition: 300ms ease-in-out;
     border-bottom: 1px solid var(--clr-divider);
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -109,6 +108,7 @@ main {
     height: auto;
     visibility: visible;
     margin: 1rem 2rem 2rem 0;
+    border-bottom: 1px solid var(--clr-divider);
 }
 
 .pointer-open {
@@ -117,7 +117,7 @@ main {
 
 .question-open {
     font-weight: var(--font-bold);
-    transition: 300ms ease-in-out;
+
 }
 
 .question-open:hover {
@@ -148,3 +148,11 @@ main {
     left: 11.067vw;
     width: 70.933vw;
 }
+
+@media (min-width: 400px) {
+    main {
+        width: 352px;
+        margin-inline: auto;
+    }
+}
+
